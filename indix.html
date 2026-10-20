@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi página web</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <div class="fila-superior">
+      <h1>Mi página web</h1>
+    </div>
+    <nav>
+      <div class="menu">
+        <a href="#texto">Texto</a>
+        <a href="#listas">Listas</a>
+        <a href="#tabla">Tabla</a>
+        <a href="#multimedia">Multimedia</a>
+        <a href="#formulario">Formulario</a>
+        <a href="#contacto">Contacto</a>
+      </div>
+      <button id="btn-tema" type="button">Cambiar tema</button>
+    </nav>
+  </header>
+
+  <div class="contenedor">
+    <main>
+      <section id="texto">
+        <h2>Elementos de texto</h2>
+        <p>
+          Párrafo con <strong>negrita</strong>, <em>cursiva</em> y <mark>resaltado</mark>.
+          <a href="https://developer.mozilla.org" target="_blank">Enlace externo</a>.
+        </p>
+        <blockquote>"Programar es aprender a resolver problemas paso a paso."</blockquote>
+      </section>
+
+      <section id="listas">
+        <h2>Listas</h2>
+        <h3>Lista con viñetas</h3>
+        <ul>
+          <li>HTML</li>
+          <li>CSS</li>
+          <li>JavaScript</li>
+        </ul>
+        <h3>Lista numerada</h3>
+        <ol>
+          <li>Crear</li>
+          <li>Escribir</li>
+          <li>Publicar</li>
+        </ol>
+        <h3>Lista de definiciones</h3>
+        <dl>
+          <dt>HTML</dt>
+          <dd>Lenguaje que da la estructura a la página.</dd>
+          <dt>CSS</dt>
+          <dd>Lenguaje que da el diseño y los colores.</dd>
+        </dl>
+      </section>
+
+      <section id="tabla">
+        <h2>Tabla</h2>
+        <table>
+          <thead>
+            <tr><th>Tecnología</th><th>Función</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>HTML</td><td>Estructura</td></tr>
+            <tr><td>CSS</td><td>Diseño</td></tr>
+            <tr><td>JavaScript</td><td>Interactividad</td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section id="multimedia">
+        <h2>Multimedia</h2>
+        <div class="multimedia">
+          <figure>
+            <img src="foto.jpg" alt="Mi foto" width="200">
+            <figcaption>Pie de foto</figcaption>
+          </figure>
+
+          <!-- VIDEO YA ARREGLADO -->
+          <iframe width="560" height="315"
+            src="https://www.youtube.com/embed/BY2mTMBkuFI"
+            title="Video de YouTube"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen></iframe>
+        </div>
+      </section>
+
+      <section id="formulario">
+        <h2>Formulario</h2>
+        <form id="mi-formulario">
+          <label for="nombre">Nombre</label>
+          <input type="text" id="nombre" required>
+
+          <label for="correo">Correo</label>
+          <input type="email" id="correo" required>
+
+          <label for="pais">País</label>
+          <select id="pais">
+            <option value="">Selecciona...</option>
+            <option>México</option>
+            <option>Colombia</option>
+            <option>Argentina</option>
+            <option>España</option>
+            <option>Otro</option>
+          </select>
+
+          <button type="submit">Enviar</button>
+        </form>
+        <p id="mensaje"></p>
+      </section>
+    </main>
+
+    <aside>
+      <h2>Barra lateral</h2>
+      <p>Contenido relacionado</p>
+      <details>
+        <summary>Desplegable</summary>
+        <p>Ver más
